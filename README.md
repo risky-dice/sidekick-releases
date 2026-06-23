@@ -2,6 +2,23 @@
 
 Public release assets and platform runtimes for the Sidekick desktop app.
 
+## Operating Model
+
+Sidekick is one product with two active development stations:
+
+- **Mac mini / Catleaf**: primary app development, macOS packaging, version bumping, GitHub Release upload, and update manifest generation.
+- **School Windows notebook**: Windows adapter/runtime development, Hancom/HWP/HWPX validation, PowerShell workflow checks, and real school-device smoke tests.
+
+The current product baseline is:
+
+```text
+Sidekick desktop app: 0.1.17
+Windows runtime adapter: 0.1.0-mvp
+Release channel: sidekick-stable.json on the latest GitHub Release
+```
+
+Keep large installer binaries attached to GitHub Releases. Keep Windows runtime scripts and contracts in this repository under `windows/`.
+
 ## Windows
 
 The Windows HWP/HWPX runtime is published under:
