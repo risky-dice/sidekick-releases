@@ -1,0 +1,23 @@
+{
+  "name": "Sidekick for Window",
+  "id": "sidekick-for-window",
+  "version": "0.1.0-mvp",
+  "platform": "windows",
+  "description": "Windows-first Codex companion for HWP/HWPX document workflows using Document Sidecar and rhwp.",
+  "entry": "Sidekick for Window.bat",
+  "coreCommands": [
+    "start",
+    "prepare",
+    "sync",
+    "active",
+    "status",
+    "docs",
+    "restore",
+    "export",
+    "refresh"
+  ],
+  "documentEngine": {
+    "preferred": "rhwp",
+    "fallback": "Hancom COM automation"
+  }
+}

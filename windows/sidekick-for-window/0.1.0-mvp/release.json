@@ -1,0 +1,29 @@
+{
+  "name": "Sidekick for Window",
+  "id": "sidekick-for-window",
+  "version": "0.1.0-mvp",
+  "platform": "windows",
+  "source": "local-windows-runtime",
+  "entry": "Sidekick for Window.bat",
+  "requires": {
+    "documentSidecar": "0.1.6",
+    "node": ">=18",
+    "powershell": "5.1+"
+  },
+  "features": [
+    "document-sidecar-start",
+    "active-document-selection",
+    "workspace-sync",
+    "local-version-vault",
+    "rhwp-preview",
+    "rhwp-search-replace-export",
+    "hancom-access-prompt-helper"
+  ],
+  "largeAssets": [
+    {
+      "name": "Document.Sidecar-0.1.6-x64-setup.exe",
+      "strategy": "attach-to-github-release",
+      "note": "Do not commit this binary to git; it is larger than GitHub's normal file limit."
+    }
+  ]
+}
